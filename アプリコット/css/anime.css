@@ -1,0 +1,133 @@
+.fadeInUpTrigger {
+    opacity: 0;
+}
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+.bgetend {
+    animation-name:bgextendAnimeBase;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	position: relative;
+	overflow: hidden;/*　はみ出た色要素を隠す　*/
+	opacity:0;
+}
+@keyframes bgextendAnimeBase{
+    from {
+      opacity:0;
+    }
+  
+    to {
+      opacity:1;  
+  }
+  }
+
+  .bgappear{
+	animation-name:bgextendAnimeSecond;
+	animation-duration:1s;
+	animation-delay: 0.6s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+
+@keyframes bgextendAnimeSecond{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgLRextend::before{
+	animation-name:bgLRextendAnime;
+	animation-duration:1s;
+	animation-fill-mode: backwards;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#EEF0ED, #FBFDFA);
+}
+
+@keyframes bgLRextendAnime{
+	0% {
+		transform-origin:left;
+		transform:scaleX(0);
+	}
+	50.001% {
+		transform-origin:left;
+	}
+	100% {
+		transform-origin:left;
+		transform:scaleX(1);
+	}
+}
+
+.TextTyping span {
+	display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+ 	content: "|";
+	animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+	from{opacity:0}
+	to{opacity:1}
+}
+
+/*========= 流れるテキスト ===============*/
+
+/*全共通*/
+
+.slide-in {
+	overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+	display: inline-block;
+
+}
+
+/*左右のアニメーション*/
+.leftAnime{
+    opacity: 0;/*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+	animation-name:slideTextX100;
+	animation-duration:0.8s;
+	animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+	transform: translateX(100%) translateY(100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+  }
+
+  to {
+	transform: translateX(0);/*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}

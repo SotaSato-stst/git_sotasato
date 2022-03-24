@@ -39,10 +39,12 @@
     width: 100%;
   }
   .top {
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 600px;
+    height: 610px;
+    padding-top: 60px;
   }
   .top__ber {
     overflow: hidden;
@@ -94,14 +96,13 @@
     height: 300px;
   }
   .vision {
-    background: -webkit-gradient(linear, left top, left bottom, from(#EEF0ED), to(#FBFDFA));
-    background: linear-gradient(#EEF0ED, #FBFDFA);
-    padding-top: 150px;
+    padding-top: 100px;
+    overflow: hidden;
     padding-bottom: 100px;
     position: relative;
   }
   .vision__container {
-    margin: 0 0 0 100px;
+    margin: 150px 0 0 100px;
     width: 40%;
   }
   .vision__message {
@@ -109,8 +110,8 @@
     font-size: 100px;
     font-weight: bold;
     position: absolute;
-    top: 130px;
-    left: 15%;
+    top: 150px;
+    left: 20%;
     z-index: 2;
   }
   .vision__title {
@@ -136,10 +137,11 @@
             transform-origin: top right;
     -webkit-transform: rotate(-25deg);
             transform: rotate(-25deg);
-    top: 0;
+    top: 100px;
     right: 0;
   }
   .content {
+    overflow: hidden;
     background-color: #FBFDFA;
     width: 100%;
   }

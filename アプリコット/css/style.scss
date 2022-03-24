@@ -1,5 +1,8 @@
 $color1 :#16D7FE;
 $color2 : #DCDEDB;
+
+
+
 @media screen and (min-width: 960px) {
 .header {
     align-items: center;
@@ -32,8 +35,10 @@ $color2 : #DCDEDB;
         }
 }
 .top {
+    overflow: hidden;
     display: flex;
-    height: 600px;
+    height: 610px;
+    padding-top: 60px;
     &__ber {
         overflow: hidden;
         padding-top: 200px;
@@ -81,12 +86,12 @@ $color2 : #DCDEDB;
     }
 }
 .vision {
-    background: linear-gradient(#EEF0ED, #FBFDFA);
-    padding-top: 150px;
+    padding-top: 100px;
+    overflow: hidden;
     padding-bottom: 100px;
     position: relative;
     &__container {
-        margin: 0 0 0 100px;
+        margin: 150px 0 0 100px;
         width: 40%;
     }
     &__message {
@@ -94,8 +99,8 @@ $color2 : #DCDEDB;
         font-size: 100px;
         font-weight: bold;
         position: absolute;
-        top: 130px;
-        left: 15%;
+        top: 150px;
+        left: 20%;
         z-index: 2;
     }
     &__title {
@@ -118,11 +123,13 @@ $color2 : #DCDEDB;
         background-repeat: no-repeat;
         transform-origin: top right;
         transform: rotate(-25deg);
-        top: 0;
+        top: 100px;
         right: 0;
     }
 }
 .content {
+    overflow: hidden;
+
     background-color: #FBFDFA;
     width: 100%;
     &__head {
