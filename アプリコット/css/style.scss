@@ -509,8 +509,17 @@ $color2 : #DCDEDB;
     padding: 40px 0 40px 0;
     display: flex;
     justify-content: left;
+    position: relative;
     a {
         display: inline-block;
+    }
+    img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.3;
+        z-index: 1;
     }
     &__title {
         font-size: 30px;
@@ -524,6 +533,8 @@ $color2 : #DCDEDB;
         opacity: 0.8;
         margin-top: 10px;
         width: 60%;
+        position: relative;
+        z-index: 5;
         &--item {
             display: flex;
             flex-direction: column;
@@ -1136,6 +1147,9 @@ $color2 : #DCDEDB;
     justify-content: left;
     a {
         display: inline-block;
+    }
+    img {
+        display: none;
     }
     &__title {
         font-size: 30px;
@@ -1770,6 +1784,9 @@ $color2 : #DCDEDB;
     justify-content: left;
     a {
         display: inline-block;
+    }
+    img {
+        display: none;
     }
     &__title {
         font-size: 30px;

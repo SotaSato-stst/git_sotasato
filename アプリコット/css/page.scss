@@ -1,0 +1,869 @@
+$color1 :#16D7FE;
+$color2 : #DCDEDB;
+
+
+.body {
+    background-color: #FDFDFA;
+}
+@media screen and (min-width: 960px) {
+.header {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    .openbtn {
+        display: none;
+    }
+    #g-nav {
+        display: none;
+    }
+        &__logo {
+            color: $color1;
+            font-size: 20px;
+            margin-left: 4%;
+        }
+        &__nav{
+            margin-left: auto;
+            margin-right: 5%;
+            width: 40%;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+}
+.top {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 100%;
+    &__container {
+        margin: 200px 0 220px 0;
+        position: absolute;
+        &--sub {
+            font-size: 14px;
+            color: #626962;
+            font-weight: bold;
+        }
+        &--title {
+            color: #2A332A;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 5px;
+            position: relative;
+            z-index: 5;
+        }
+        &--message {
+            color: #F7F8F5;
+            font-size: 100px;
+            position: absolute;
+            bottom: -70px;
+            right: -40px;
+            font-weight: bold;
+        }
+    }
+}
+.greeting {
+    &__title {
+        display: flex;
+        align-items: center;
+        img {
+            height: 2px;
+        }
+        p {
+            font-size: 26px;
+            font-weight: bold;
+            padding: 0 0 0 50px;
+        }
+    }
+    &__main {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        height: 0;
+        padding-top: calc(1076 / 1920 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background: url("../img/グループ 5.png") center center / cover no-repeat;
+    }
+    &__container {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6%;
+        position: absolute;
+        width: 40%;
+        background:rgba(255,255,255,0.4);
+        padding: 2.5% 3% 3% 3%;
+        &--title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        &--name {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 1;
+
+        }
+        &--text {
+            font-size: 14px;
+            line-height: 1.8em;
+            margin-top: 20px;
+        }
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        padding: 130px 0 130px 0;
+        justify-content: center;
+        &--container {
+            text-align: center;
+            padding: 2% 4% 2% 4%;
+            position: relative;
+            p {
+                color: #2A332A;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1.8em;
+            }
+            .line__top--height {
+                width: 2px;
+                height: 60%;
+                background-color: #16D7FE;
+                position: absolute;
+                left: 0;
+                top: -30%;
+                opacity: 0.3;
+            }
+            .line__bottom--height {
+                width: 2px;
+                height: 60%;
+                background-color: #16D7FE;
+                position: absolute;
+                right: 0;
+                bottom: -30%;
+                opacity: 0.3;
+            }
+            .line__top--width {
+                height: 2px;
+                width: 20%;
+                background-color: #16D7FE;
+                position: absolute;
+                left: -5%;
+                top: 0;
+                opacity: 0.3;
+            }
+            .line__bottom--width {
+                height: 2px;
+                width: 20%;
+                background-color: #16D7FE;
+                position: absolute;
+                right: -5%;
+                bottom: 0;
+                opacity: 0.3;
+            }
+        }
+    }
+}
+.company {
+    &__main {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    &__container {
+        width: 40%;
+        &--item {
+            padding: 1em 1.5em 1em 2em;
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #707070;
+            span {
+                font-size: 14px;
+                font-weight: normal;
+                margin-left: 5%;
+            }
+        }
+    }
+}
+.footer {
+    background-color: #2A332A;
+    color: white;
+    font-size: 16px;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    a {
+        display: inline-block;
+    }
+    img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0.3;
+        z-index: 1;
+    }
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        width: 25%;
+    }
+    &__nav {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.8;
+        margin-top: 10px;
+        width: 60%;
+        position: relative;
+        z-index: 5;
+        &--item {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            &-bottom {
+                display: flex;
+                line-height:  2.0em;
+                flex-direction: column;
+                margin-top: 30px;
+            }
+        }
+    } 
+}
+}
+@media screen and (max-width: 959px) and (min-width: 480px) {
+.header {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+        &__logo {
+            color: $color1;
+            font-size: 20px;
+            margin-left: 4%;
+        }
+        &__nav{
+            margin-left: auto;
+            margin-right: 5%;
+            width: 40%;
+            display: none;
+        }
+        .pcul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #g-nav{
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position:fixed;
+        z-index: 999;
+        /*ナビのスタート位置と形状*/
+        top:-120%;
+        left:0;
+        width:100%;
+        height: 100vh;/*ナビの高さ*/
+        background:#DCDEDB;
+        /*動き*/
+        transition: all 0.6s;
+    }
+
+    /*アクティブクラスがついたら位置を0に*/
+    #g-nav.panelactive{
+        top: 0;
+    }
+
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        /*ナビゲーション天地中央揃え*/
+        z-index: 999;
+        margin-top: 100px;
+        margin-left: auto;
+        width: 40%;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li{
+        border-bottom: 2px solid#626962;
+        padding: 0 0 5px 0;
+        margin-top: 10px;
+    }
+
+    #g-nav li a{
+        color: #333;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+        
+    /*×に変化*/	
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+}
+.top {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    &__container {
+        margin: 150px 0 150px 0;
+        position: absolute;
+        &--sub {
+            font-size: 14px;
+            color: #626962;
+            font-weight: bold;
+        }
+        &--title {
+            color: #2A332A;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 5px;
+            position: relative;
+            z-index: 5;
+        }
+        &--message {
+            color: #F7F8F5;
+            font-size: 80px;
+            position: absolute;
+            bottom: -50px;
+            right: -40px;
+            font-weight: bold;
+        }
+    }
+}
+.greeting {
+    &__title {
+        display: flex;
+        align-items: center;
+        img {
+            height: 2px;
+        }
+        p {
+            font-size: 26px;
+            font-weight: bold;
+            padding: 0 0 0 50px;
+        }
+    }
+    &__main {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        height: 0;
+        padding-top: calc(1076 / 1920 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background: url("../img/グループ 5.png") center center / cover no-repeat;
+    }
+    &__container {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6%;
+        position: absolute;
+        width: 40%;
+        background:rgba(255,255,255,0.4);
+        padding: 2.5% 3% 3% 3%;
+        &--title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &--name {
+            margin-top: 16px;
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 1;
+
+        }
+        &--text {
+            font-size: 12px;
+            line-height: 1.5em;
+            margin-top: 16px;
+        }
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        padding: 100px 0 100px 0;
+        justify-content: center;
+        &--container {
+            text-align: center;
+            padding: 2% 4% 2% 4%;
+            position: relative;
+            p {
+                color: #2A332A;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.8em;
+            }
+            .line__top--height {
+                width: 2px;
+                height: 60%;
+                background-color: #16D7FE;
+                position: absolute;
+                left: 0;
+                top: -30%;
+                opacity: 0.3;
+            }
+            .line__bottom--height {
+                width: 2px;
+                height: 60%;
+                background-color: #16D7FE;
+                position: absolute;
+                right: 0;
+                bottom: -30%;
+                opacity: 0.3;
+            }
+            .line__top--width {
+                height: 2px;
+                width: 20%;
+                background-color: #16D7FE;
+                position: absolute;
+                left: -5%;
+                top: 0;
+                opacity: 0.3;
+            }
+            .line__bottom--width {
+                height: 2px;
+                width: 20%;
+                background-color: #16D7FE;
+                position: absolute;
+                right: -5%;
+                bottom: 0;
+                opacity: 0.3;
+            }
+        }
+    }
+}
+.company {
+    &__main {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    &__container {
+        margin-top: 20px;
+        width: 60%;
+        &--item {
+            padding: 1em 1.5em 1em 2em;
+            font-size: 14Spx;
+            font-weight: bold;
+            border-bottom: 1px solid #707070;
+            span {
+                font-size: 12px;
+                font-weight: normal;
+                margin-left: 5%;
+            }
+        }
+    }
+}
+.footer {
+    background-color: #2A332A;
+    color: white;
+    font-size: 16px;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: left;
+    a {
+        display: inline-block;
+    }
+    img {
+        display: none;
+    }
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        width: 25%;
+    }
+    &__nav {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.8;
+        margin-top: 6px;
+        width: 70%;
+        &--item {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            &-bottom {
+                display: flex;
+                line-height:  2.0em;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        }
+    } 
+}
+}
+@media screen and (max-width: 479px) {
+.header {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+        &__logo {
+            color: $color1;
+            font-size: 20px;
+            margin-left: 4%;
+        }
+        &__nav{
+            margin-left: auto;
+            margin-right: 5%;
+            width: 40%;
+            display: none;
+        }
+        .pcul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    #g-nav{
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position:fixed;
+        z-index: 999;
+        /*ナビのスタート位置と形状*/
+        top:-120%;
+        left:0;
+        width:100%;
+        height: 100vh;/*ナビの高さ*/
+        background:#DCDEDB;
+        /*動き*/
+        transition: all 0.6s;
+    }
+
+    /*アクティブクラスがついたら位置を0に*/
+    #g-nav.panelactive{
+        top: 0;
+    }
+
+
+    /*ナビゲーション*/
+    #g-nav ul {
+        /*ナビゲーション天地中央揃え*/
+        z-index: 999;
+        margin-top: 100px;
+        margin-left: auto;
+        width: 60%;
+    }
+
+    /*リストのレイアウト設定*/
+
+    #g-nav li{
+        border-bottom: 2px solid#626962;
+        padding: 0 0 5px 0;
+        margin-top: 10px;
+    }
+
+    #g-nav li a{
+        color: #333;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+        
+    /*×に変化*/	
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+}
+.top {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    &__container {
+        margin: 100px 0 50px 0;
+        position: absolute;
+        &--sub {
+            font-size: 14px;
+            color: #626962;
+            font-weight: bold;
+        }
+        &--title {
+            color: #2A332A;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 5px;
+            position: relative;
+            z-index: 5;
+        }
+        &--message {
+            color: #F7F8F5;
+            font-size: 50px;
+            position: absolute;
+            bottom: -30px;
+            right: -40px;
+            font-weight: bold;
+        }
+    }
+}
+.greeting {
+    &__title {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        img {
+            height: 2px;
+            width: 30%;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 0 0 20px;
+        }
+    }
+    &__main {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        height: 0;
+        padding-top: calc(1076 / 1920 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+        background: url("../img/グループ 5.png") center center / cover no-repeat;
+    }
+    &__container {
+        width: 100%;
+        padding: 10% 4% 4% 4%;
+        &--title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &--name {
+            margin-top: 14px;
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 1;
+
+        }
+        &--text {
+            font-size: 11px;
+            line-height: 1.8em;
+            margin-top: 16px;
+        }
+    }
+    &__body {
+        margin-top: 400px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--container {
+            text-align: center;
+            padding: 2% 4% 2% 4%;
+            width: 80%;
+            position: relative;
+            p {
+                color: #2A332A;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.8em;
+            }
+            .line__top--height {
+                width: 2px;
+                height: 60%;
+                background-color: #16D7FE;
+                position: absolute;
+                left: 0;
+                top: -30%;
+                opacity: 0.3;
+            }
+            .line__bottom--height {
+                width: 2px;
+                height: 60%;
+                background-color: #16D7FE;
+                position: absolute;
+                right: 0;
+                bottom: -30%;
+                opacity: 0.3;
+            }
+            .line__top--width {
+                height: 2px;
+                width: 20%;
+                background-color: #16D7FE;
+                position: absolute;
+                left: -5%;
+                top: 0;
+                opacity: 0.3;
+            }
+            .line__bottom--width {
+                height: 2px;
+                width: 20%;
+                background-color: #16D7FE;
+                position: absolute;
+                right: -5%;
+                bottom: 0;
+                opacity: 0.3;
+            }
+        }
+    }
+}
+.company {
+    padding-top: 100px;
+    &__main {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    &__container {
+        margin-top: 10px;
+        width: 80%;
+        &--item {
+            padding: 0.5em 1em 1em 1em;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #707070;
+            span {
+                font-size: 12px;
+                font-weight: normal;
+                margin-left: 5%;
+            }
+        }
+    }
+}
+.footer {
+    background-color: #2A332A;
+    color: white;
+    font-size: 16px;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    a {
+        display: inline-block;
+    }
+    img {
+        display: none;
+    }
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        width: 25%;
+    }
+    &__nav {
+        padding: 0 0px 0 5px;
+        font-size: 8px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.8;
+        margin-top: 6px;
+        width: 100%;
+        &--item {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            &-bottom {
+                display: flex;
+                line-height:  2.0em;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+        }
+    } 
+}
+}
